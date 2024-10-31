@@ -2,7 +2,7 @@
 
 A Python web application that calculates distances between star systems in Elite Dangerous using the EDSM (Elite Dangerous Star Map) API. The calculator features an intuitive interface for plotting routes, optimizing paths, and managing system coordinates.
 
-![EDSM Calculator Interface](/api/placeholder/800/400)
+![EDSM Calculator Interface](user_interface.png)
 
 [![requests](https://img.shields.io/badge/requests-2.31.0-blue)](https://requests.readthedocs.io/)
 [![nicegui](https://img.shields.io/badge/nicegui-1.4.5-blue)](https://nicegui.io/)
