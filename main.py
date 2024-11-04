@@ -242,8 +242,7 @@ def home():
                                 await calculate_route()
                             system_input.value = ''
                         else:
-                            ui.notify(f'System "{
-                                      system_input.value}" not found or has no coordinates', type='negative')
+                            ui.notify(f'System "{system_input.value}" not found or has no coordinates', type='negative')
 
                     ui.button('Add System', on_click=add_system).classes(
                         'bg-blue-500')
@@ -341,8 +340,7 @@ def home():
                             else:
                                 ui.notify(message, type='negative')
                         except Exception as ex:
-                            ui.notify(f"Error processing file: {
-                                      str(ex)}", type='negative')
+                            ui.notify(f"Error processing file: {str(ex)}", type='negative')
 
                     upload = ui.upload(
                         label='Import Route',
@@ -425,8 +423,7 @@ def home():
         prefix = "Optimized " if is_optimized else ""
         label.text = f'{prefix}Total Distance: {total_distance:.2f} Ly'
 
-        jumps_text = f'Estimated Jumps: {
-            total_jumps}' if jump_range > 0 else 'Estimated Jumps: N/A'
+        jumps_text = f'Estimated Jumps: {total_jumps}' if jump_range > 0 else 'Estimated Jumps: N/A'
         if is_optimized:
             optimized_jumps_label.text = jumps_text
         else:
